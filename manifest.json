@@ -1,0 +1,26 @@
+{
+  "name": "Cottage Vidéos",
+  "short_name": "Cottage Vidéos",
+  "description": "Bibliothèque de vidéos de nettoyage Cottage - Guide opérationnel Housekeeping",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F5F8F2",
+  "theme_color": "#0F5D2F",
+  "lang": "fr-FR",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

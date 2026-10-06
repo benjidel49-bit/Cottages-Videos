@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bibliothèque Vidéos Nettoyage Cottage</title>
+
+
+<style>
+
+:root{
+    --cp-green:#0F5D2F;
+    --cp-light:#3FAE49;
+    --cp-bg:#F5F8F2;
+    --cp-white:#ffffff;
+    --cp-shadow:0 8px 25px rgba(0,0,0,0.12);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--cp-bg);
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#0F5D2F,#3FAE49);
+    color:white;
+    padding:40px 20px;
+    text-align:center;
+    box-shadow:var(--cp-shadow);
+}
+
+header h1{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+header p{
+    opacity:0.9;
+}
+
+/* BARRE RECHERCHE */
+
+.search-container{
+    max-width:900px;
+    margin:30px auto;
+    padding:0 20px;
+}
+
+#search{
+    width:100%;
+    padding:15px 20px;
+    border:none;
+    border-radius:50px;
+    font-size:16px;
+    box-shadow:var(--cp-shadow);
+}
+
+/* COMPTEUR */
+
+.counter{
+    text-align:center;
+    color:var(--cp-green);
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+/* GRILLE */
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding:20px;
+    max-width:1400px;
+    margin:auto;
+}
+
+/* CARTE */
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:var(--cp-shadow);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-header{
+    background:linear-gradient(135deg,#0F5D2F,#3FAE49);
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+.card-header span{
+    font-size:3rem;
+}
+
+.card-body{
+    padding:25px;
+    text-align:center;
+}
+
+.card-body h3{
+    min-height:60px;
+    color:#1d1d1d;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 22px;
+    background:var(--cp-green);
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#093A1D;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:40px;
+    background:#1B1B1B;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+header h1{
+    font-size:1.8rem;
+}
+
+.card-header span{
+    font-size:2.5rem;
+}
+
+}
+
+.install-btn{display:none;margin:0 auto 20px;padding:12px 22px;border:0;border-radius:50px;background:#E53935;color:#fff;font-weight:700;cursor:pointer;box-shadow:var(--cp-shadow);}
+</style>
+
+<meta name="theme-color" content="#0F5D2F">
+<meta name="description" content="Bibliothèque de vidéos de nettoyage Cottage - Guide opérationnel Housekeeping">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+
+<body>
+
+<header>
+    <h1>🏡 Bibliothèque Vidéos Nettoyage Cottage</h1>
+    <p>Guide opérationnel Housekeeping</p>
+</header>
+
+<button id="installButton" class="install-btn">📲 Installer l’application</button>
+
+<div class="search-container">
+    <input type="text" id="search" placeholder="🔍 Rechercher une vidéo...">
+</div>
+
+<div class="counter">
+    📹 16 vidéos disponibles
+</div>
+
+<div class="video-grid" id="videoGrid">
+
+    <div class="card">
+        <div class="card-header"><span>📋</span></div>
+        <div class="card-body">
+            <h3>Ordre des étapes d’un nettoyage régulier</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=iOBdG1nNRsg" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>🍽️</span></div>
+        <div class="card-body">
+            <h3>Entretenir et remplir le lave-vaisselle</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=AqJKmxEFM8M" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>🛁</span></div>
+        <div class="card-body">
+            <h3>Produits salle de bain</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=4q2ZVdXL1Z0" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>🍳</span></div>
+        <div class="card-body">
+            <h3>Produits cuisine</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=KnLW3itpsEA" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>🚽</span></div>
+        <div class="card-body">
+            <h3>Produits toilettes</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=O2hcT4odMOw" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>🔥</span></div>
+        <div class="card-body">
+            <h3>Produits cheminée</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=8XHDt-03Ov4" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>🛀</span></div>
+        <div class="card-body">
+            <h3>Salle de Bain</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=hpxwNa7brs8" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>♨️</span></div>
+        <div class="card-body">
+            <h3>Sauna</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=eNqDUQg9f2Q" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>🛏️</span></div>
+        <div class="card-body">
+            <h3>Chambre</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=ufN-W0xRH5M" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>🌳</span></div>
+        <div class="card-body">
+            <h3>Terrasse</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=S2vyG5NbNIM" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>🍽️</span></div>
+        <div class="card-body">
+            <h3>Salle à Manger</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=9o9NnItTMjI" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>🛋️</span></div>
+        <div class="card-body">
+            <h3>Salon</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=YzaqA7juiIA" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>👨‍🍳</span></div>
+        <div class="card-body">
+            <h3>Cuisine</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=hsyvdLeLfJA" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>🚪</span></div>
+        <div class="card-body">
+            <h3>Entrée</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=G8N15dvO9gE" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>🏡</span></div>
+        <div class="card-body">
+            <h3>Devanture Cottage</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=gvI7klARTrk" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span>🗄️</span></div>
+        <div class="card-body">
+            <h3>Placard de l'entrée</h3>
+            <a class="btn" href="https://www.youtube.com/watch?v=Dv_1gaZ33hA" target="_blank">Voir la vidéo</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © Center Parcs | Bibliothèque Housekeeping
+</footer>
+
+<script>
+
+const searchInput = document.getElementById('search');
+const cards = document.querySelectorAll('.card');
+
+searchInput.addEventListener('keyup', function(){
+
+    const value = this.value.toLowerCase();
+
+    cards.forEach(card => {
+
+        let title = card.querySelector('h3').textContent.toLowerCase();
+
+        if(title.includes(value)){
+            card.style.display='block';
+        }else{
+            card.style.display='none';
+        }
+
+    });
+
+});
+
+
+// Installation PWA
+let deferredPrompt;
+const installButton=document.getElementById('installButton');
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;installButton.style.display='block';});
+installButton.addEventListener('click',async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;installButton.style.display='none';});
+window.addEventListener('appinstalled',()=>installButton.style.display='none');
+if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(console.error));
+</script>
+
+</body>
+</html>
