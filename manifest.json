@@ -2,7 +2,7 @@
   "name": "Cottage Vidéos",
   "short_name": "Cottage Vidéos",
   "description": "Bibliothèque de vidéos de nettoyage Cottage - Guide opérationnel Housekeeping",
-  "start_url": "./",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
